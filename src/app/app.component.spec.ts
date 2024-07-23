@@ -14,7 +14,7 @@ describe('AppComponent', () => {
         expect(app).toBeTruthy();
     });
 
-    it('should have the \'angular-template\' title', () => {
+    it(`should have the 'angular-template' title`, () => {
         const fixture = TestBed.createComponent(AppComponent);
         const app = fixture.componentInstance;
         expect(app.title).toEqual('angular-template');
