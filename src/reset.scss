@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -41,6 +44,9 @@ b,
 u,
 i,
 center,
+input,
+textarea,
+select,
 button,
 dl,
 dt,
@@ -83,20 +89,9 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
-
-input,
-textarea {
-    border: none;
-    outline: none;
-    background: none;
-    font: inherit;
-    line-height: 1rem;
-}
-
 article,
 aside,
 details,
@@ -110,30 +105,24 @@ nav,
 section {
     display: block;
 }
-
 body {
     line-height: 1;
 }
-
 ol,
 ul {
     list-style: none;
 }
-
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 blockquote,
 q {
     quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
     content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
