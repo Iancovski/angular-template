@@ -1,16 +1,8 @@
-import {
-    ApplicationConfig,
-    provideBrowserGlobalErrorListeners,
-    provideZonelessChangeDetection,
-} from '@angular/core';
-import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from "@angular/core";
+import { provideRouter, withComponentInputBinding } from "@angular/router";
 
-import { routes } from './app.routes';
+import { routes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
-    providers: [
-        provideBrowserGlobalErrorListeners(),
-        provideZonelessChangeDetection(),
-        provideRouter(routes, withComponentInputBinding()),
-    ],
+    providers: [provideBrowserGlobalErrorListeners(), provideZonelessChangeDetection(), provideRouter(routes, withComponentInputBinding())],
 };
